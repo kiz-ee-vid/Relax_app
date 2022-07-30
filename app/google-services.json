@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "752322539567",
+    "firebase_url": "https://lab3-a4f6b-default-rtdb.firebaseio.com",
+    "project_id": "lab3-a4f6b",
+    "storage_bucket": "lab3-a4f6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752322539567:android:6e5978d96ae9d3cf7d56da",
+        "android_client_info": {
+          "package_name": "com.example.lab3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752322539567-u0b3hi76nd1ng6l7e90fvea0tjo5k585.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBakkVG0w1ORHRkhtLMp37jRrq2QHzfThc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752322539567-u0b3hi76nd1ng6l7e90fvea0tjo5k585.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

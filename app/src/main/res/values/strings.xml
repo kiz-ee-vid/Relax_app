@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">lab3</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="enter_account">Log in</string>
+    <string name="registration_title">Don\'t have an account yet? Register</string>
+    <string name="motivation_title">Enjoy the qualifiers.\nBe careful.\n Do well.</string>
+    <string name="profile">Profile</string>
+    <string name="sign_in">Sign in</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="music">Music</string>
+    <string name="horoscope">Horoscope</string>
+</resources>

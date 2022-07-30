@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/start_fragment">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.lab3.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_advise"
+            app:destination="@id/advise" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_horoscope"
+        android:name="com.example.lab3.ui.horoscope.HoroscopeFragment"
+        android:label="Goroscop Page"
+        tools:layout="@layout/fragment_horoscope" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.lab3.ui.music.MusicFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_music" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.lab3.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_navigation_profile_to_image"
+            app:destination="@id/image" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/image"
+        android:name="com.example.lab3.ui.profile.ImageFragment"
+        android:label="Image"
+        tools:layout="@layout/fragment_image">
+        <action
+            android:id="@+id/action_image_to_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/start_fragment"
+        android:name="com.example.lab3.ui.authoruzation.StartFragment"
+        android:label="Start Page"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_start_to_registration"
+            app:destination="@id/authorization_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/authorization_fragment"
+        android:name="com.example.lab3.ui.authoruzation.AuthorizationFragment"
+        android:label="Authorization Page"
+        tools:layout="@layout/fragment_authorization">
+        <action
+            android:id="@+id/action_authorization_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_authorization_to_registration"
+            app:destination="@id/registration_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registration_fragment"
+        android:name="com.example.lab3.ui.authoruzation.RegistrationFragment"
+        android:label="Registration Page"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_registration_to_authorization"
+            app:destination="@id/authorization_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/advise"
+        android:name="com.example.lab3.ui.home.AdviseFragment"
+        android:label="Advise Page"
+        tools:layout="@layout/fragment_advise" />
+
+</navigation>
