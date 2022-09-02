@@ -28,7 +28,7 @@ class AdviseFragment: Fragment() {
     ): View? {
 
         binding.apply {
-            advise = arguments?.getParcelable("advise")
+            advise = arguments?.getSerializable("advise") as Advise
             advise?.let { adviseImage.setImageResource(it.image) }
             adviseTitle.text = advise?.title ?: "No information"
             adviseDescription.text = advise?.description ?: "No information"

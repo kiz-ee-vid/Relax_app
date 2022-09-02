@@ -37,7 +37,7 @@ class AdviseAdapter(val itemClick: (Bundle) -> Unit) :
             binding.adviseImage.setImageResource(chosenAdvise[position].image)
             binding.button.setOnClickListener {
                 val bundle = Bundle()
-                bundle.putParcelable("advise", chosenAdvise[position])
+                bundle.putSerializable("advise", chosenAdvise[position])
                 itemClick(bundle)
             }
         }
